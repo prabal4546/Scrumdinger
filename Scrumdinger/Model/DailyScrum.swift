@@ -30,4 +30,16 @@ extension DailyScrum {
             DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"], lengthInMinutes: 1, color: Color("Web Dev"))
         ]
     }
+    
+}
+extension DailyScrum {
+    struct Data {
+        var title: String = ""
+        var attendees: [String] = []
+        var lengthInMinutes: Double = 5.0
+        var color: Color = .red
+    }
+    var data:Data{
+        return Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), color: color)
+    }
 }
