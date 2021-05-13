@@ -14,7 +14,7 @@ struct DetailView: View {
     var body: some View {
         List{
             Section(header:Text("Meeting Info")){
-                NavigationLink(destination: MeetingView()){
+                NavigationLink(destination: MeetingView(scrum: $scrum)){
                     Label("Start Meeting", systemImage: "timer")
                         .foregroundColor(.accentColor)
                         .font(.headline)
@@ -50,7 +50,7 @@ struct DetailView: View {
                         isPresented = false
                     }), trailing: Button("Done"){
                         isPresented = false
-//                        scrum.update(from: data)
+                        scrum.update(from: data)
                     })
             }
         })

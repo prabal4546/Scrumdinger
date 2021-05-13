@@ -8,41 +8,44 @@
 import SwiftUI
 
 struct MeetingView: View {
+    @StateObject var scrumTimer = ScrumTimer()
+    @Binding var scrum:DailyScrum
     var body: some View {
-        VStack {
-            ProgressView(value: Double(5), total: Double(15))
-            HStack {
-                VStack(alignment:.leading) {
-                    Text("Seconds Elapsed")
-                        .font(.caption)
-                    Label("300", systemImage: "hourglass.bottomhalf.fill")
-                }
+        ZStack {
+            RoundedRectangle(cornerRadius: 16)
+                .fill(scrum.color)
+            VStack {
+                MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, scrumColor: scrum.color)
+                Circle()
+                    .strokeBorder(lineWidth: 24, antialiased:true)
+                Text("Speaker 1 of 3")
                 Spacer()
-                VStack(alignment:.trailing) {
-                    Text("Seconds Remaining")
-                        .font(.caption)
-                    Label("600", systemImage: "hourglass.tophalf.fill")
+                Button(action:{
+                    
+                })
+                {
+                  Image(systemName: "forward.fill")
                 }
-            }
-            Circle()
-                .strokeBorder(lineWidth: 24, antialiased:true)
-            Text("Speaker 1 of 3")
-            Spacer()
-            Button(action:{
                 
-            })
-            {
-              Image(systemName: "forward.fill")
             }
             
         }
         .padding()
+        .foregroundColor(scrum.color.accessibleFontColor)
+        .onAppear{
+            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+            scrumTimer.startScrum()
+        }
+        .onDisappear{
+            scrumTimer.stopScrum()
+        }
     }
+    
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MeetingView()
+        MeetingView(scrum: .constant(DailyScrum.data[0]))
     }
 }
