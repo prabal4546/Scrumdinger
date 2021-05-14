@@ -18,20 +18,12 @@ struct MeetingView: View {
                 MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, scrumColor: scrum.color)
                 Circle()
                     .strokeBorder(lineWidth: 24, antialiased:true)
-                Text("Speaker 1 of 3")
-                Spacer()
-                Button(action:{
-                    
-                })
-                {
-                  Image(systemName: "forward.fill")
-                }
-                
+                MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
             
         }
         .padding()
-        .foregroundColor(scrum.color.accessibleFontColor)
+//        .foregroundColor(scrum.color.accessibleFontColor)
         .onAppear{
             scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
             scrumTimer.startScrum()
