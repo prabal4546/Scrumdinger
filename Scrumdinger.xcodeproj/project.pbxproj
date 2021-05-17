@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9100CAA926523D1E00551E76 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100CAA826523D1E00551E76 /* History.swift */; };
 		91590BC9264912EA00B1A6B9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BC8264912EA00B1A6B9 /* DetailView.swift */; };
 		91590BCB2649734E00B1A6B9 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BCA2649734E00B1A6B9 /* EditView.swift */; };
 		91590BCD264A8D5E00B1A6B9 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BCC264A8D5E00B1A6B9 /* MeetingHeaderView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9100CAA826523D1E00551E76 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		91590BC8264912EA00B1A6B9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		91590BCA2649734E00B1A6B9 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		91590BCC264A8D5E00B1A6B9 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				91590BD0264AB6F000B1A6B9 /* ScrumTimer.swift */,
 				91590BD2264AB81000B1A6B9 /* Color+Codable.swift */,
 				91B5AD58264F9A5700338F03 /* AVPlayer+Ding.swift */,
+				9100CAA826523D1E00551E76 /* History.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				91B5AD59264F9A5700338F03 /* AVPlayer+Ding.swift in Sources */,
 				91B919F026480293004854B6 /* ScrumsView.swift in Sources */,
 				91B919DB2647B98F004854B6 /* ScrumdingerApp.swift in Sources */,
+				9100CAA926523D1E00551E76 /* History.swift in Sources */,
 				91590BD3264AB81000B1A6B9 /* Color+Codable.swift in Sources */,
 				91590BCD264A8D5E00B1A6B9 /* MeetingHeaderView.swift in Sources */,
 			);
