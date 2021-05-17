@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9100CAA926523D1E00551E76 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100CAA826523D1E00551E76 /* History.swift */; };
+		9100CAAB2652911700551E76 /* ScrumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9100CAAA2652911700551E76 /* ScrumData.swift */; };
 		91590BC9264912EA00B1A6B9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BC8264912EA00B1A6B9 /* DetailView.swift */; };
 		91590BCB2649734E00B1A6B9 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BCA2649734E00B1A6B9 /* EditView.swift */; };
 		91590BCD264A8D5E00B1A6B9 /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BCC264A8D5E00B1A6B9 /* MeetingHeaderView.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		9100CAA826523D1E00551E76 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		9100CAAA2652911700551E76 /* ScrumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumData.swift; sourceTree = "<group>"; };
 		91590BC8264912EA00B1A6B9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		91590BCA2649734E00B1A6B9 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		91590BCC264A8D5E00B1A6B9 /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				91590BD2264AB81000B1A6B9 /* Color+Codable.swift */,
 				91B5AD58264F9A5700338F03 /* AVPlayer+Ding.swift */,
 				9100CAA826523D1E00551E76 /* History.swift */,
+				9100CAAA2652911700551E76 /* ScrumData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				91B919DD2647B98F004854B6 /* MeetingView.swift in Sources */,
 				91590BC9264912EA00B1A6B9 /* DetailView.swift in Sources */,
+				9100CAAB2652911700551E76 /* ScrumData.swift in Sources */,
 				91B919EB2647C0CA004854B6 /* DailyScrum.swift in Sources */,
 				91590BD1264AB6F000B1A6B9 /* ScrumTimer.swift in Sources */,
 				91B919EE2647C1BE004854B6 /* CardView.swift in Sources */,
