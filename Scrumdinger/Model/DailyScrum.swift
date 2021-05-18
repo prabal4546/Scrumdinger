@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-struct DailyScrum:Identifiable {
+struct DailyScrum:Identifiable,Codable {
     var id: UUID
     
     var title:String
