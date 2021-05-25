@@ -16,6 +16,8 @@
 		91590BD3264AB81000B1A6B9 /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BD2264AB81000B1A6B9 /* Color+Codable.swift */; };
 		91590BD5264AC14F00B1A6B9 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91590BD4264AC14F00B1A6B9 /* MeetingFooterView.swift */; };
 		917DF97226577CA50017AC74 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917DF97126577CA50017AC74 /* MeetingTimerView.swift */; };
+		91B57A52265CCD9C00A25928 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B57A51265CCD9C00A25928 /* SpeechRecognizer.swift */; };
+		91B57A54265D102C00A25928 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B57A53265D102C00A25928 /* HistoryView.swift */; };
 		91B5AD59264F9A5700338F03 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B5AD58264F9A5700338F03 /* AVPlayer+Ding.swift */; };
 		91B919DB2647B98F004854B6 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B919DA2647B98F004854B6 /* ScrumdingerApp.swift */; };
 		91B919DD2647B98F004854B6 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B919DC2647B98F004854B6 /* MeetingView.swift */; };
@@ -36,6 +38,8 @@
 		91590BD2264AB81000B1A6B9 /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
 		91590BD4264AC14F00B1A6B9 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		917DF97126577CA50017AC74 /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		91B57A51265CCD9C00A25928 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeechRecognizer.swift; path = ../../../TranscribingSpeechToText/StartingProject/Scrumdinger/Scrumdinger/Models/SpeechRecognizer.swift; sourceTree = "<group>"; };
+		91B57A53265D102C00A25928 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		91B5AD58264F9A5700338F03 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		91B919D72647B98F004854B6 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B919DA2647B98F004854B6 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			children = (
 				91B919EA2647C0CA004854B6 /* DailyScrum.swift */,
 				91590BD0264AB6F000B1A6B9 /* ScrumTimer.swift */,
+				91B57A51265CCD9C00A25928 /* SpeechRecognizer.swift */,
 				91590BD2264AB81000B1A6B9 /* Color+Codable.swift */,
 				91B5AD58264F9A5700338F03 /* AVPlayer+Ding.swift */,
 				9100CAA826523D1E00551E76 /* History.swift */,
@@ -120,6 +125,7 @@
 				91590BCC264A8D5E00B1A6B9 /* MeetingHeaderView.swift */,
 				91590BD4264AC14F00B1A6B9 /* MeetingFooterView.swift */,
 				917DF97126577CA50017AC74 /* MeetingTimerView.swift */,
+				91B57A53265D102C00A25928 /* HistoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91B919DD2647B98F004854B6 /* MeetingView.swift in Sources */,
+				91B57A52265CCD9C00A25928 /* SpeechRecognizer.swift in Sources */,
 				91590BC9264912EA00B1A6B9 /* DetailView.swift in Sources */,
 				9100CAAB2652911700551E76 /* ScrumData.swift in Sources */,
 				91B919EB2647C0CA004854B6 /* DailyScrum.swift in Sources */,
@@ -207,6 +214,7 @@
 				9100CAA926523D1E00551E76 /* History.swift in Sources */,
 				917DF97226577CA50017AC74 /* MeetingTimerView.swift in Sources */,
 				91590BD3264AB81000B1A6B9 /* Color+Codable.swift in Sources */,
+				91B57A54265D102C00A25928 /* HistoryView.swift in Sources */,
 				91590BCD264A8D5E00B1A6B9 /* MeetingHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
