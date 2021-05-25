@@ -43,4 +43,20 @@ class ScrumData: ObservableObject {
         }
         
     }
+    func save(){
+        DispatchQueue.global(qos: .background).async {[weak self] in
+            guard let scrums = self?.scrums else{
+                fatalError("Can't decode saved scrum data.")
+            }
+        }
+        guard let data = try? JSONEncoder().encode(scrums) else{
+            fatalError("error encoding")
+        }
+        do{
+            let outfile = Self.fileURL
+            try data.write(to: outfile)
+        }catch{
+            fatalError("Can't write to file")
+        }
+    }
 }
